@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Chworościany --- Birds in sand.kmz</name>
+	<open>1</open>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_ylw-pushpin0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin00</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl00</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_ylw-pushpin1">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<color>ffff00ff</color>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin0">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin00">
+		<IconStyle>
+			<color>ffffff55</color>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<color>ffff00ff</color>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl0">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl00">
+		<IconStyle>
+			<color>ffffff55</color>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Placemark>
+		<name>Chworościany --- Birds in sand</name>
+		<description>Ptaszki mieszkające w gniazdach z piasku!</description>
+		<LookAt>
+			<longitude>23.61685262625913</longitude>
+			<latitude>53.61444343212229</latitude>
+			<altitude>0</altitude>
+			<heading>0.001091099942732105</heading>
+			<tilt>30.00189857003715</tilt>
+			<range>422.6870055142583</range>
+			<altitudeMode>relativeToGround</altitudeMode>
+		</LookAt>
+		<styleUrl>#m_ylw-pushpin1</styleUrl>
+		<Point>
+			<coordinates>23.61685262625913,53.61444343212228,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Chałupki --- Hotel Pod DUBEM</name>
+		<description>Byłem, zjadłem, zapłaciłem i co najważniejsze:
++ przeżyłem,
++
+.</description>
+		<LookAt>
+			<longitude>18.32696039693611</longitude>
+			<latitude>49.92008569832937</latitude>
+			<altitude>0</altitude>
+			<heading>-2.344363001546646e-09</heading>
+			<tilt>0</tilt>
+			<range>1000.000002628229</range>
+			<altitudeMode>relativeToGround</altitudeMode>
+		</LookAt>
+		<styleUrl>#m_ylw-pushpin0</styleUrl>
+		<Point>
+			<coordinates>18.32696039693611,49.92008569832937,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>ŚwinIoujście --- TWÓJ kierunek ujści@</name>
+		<description><![CDATA[Śą świnie równe i równiejsze ale wszyskie uchodzą tą samą drogą!
+2024 <sp9ryc>RYCHo</sp9ryc>]]></description>
+		<LookAt>
+			<longitude>14.24757768667275</longitude>
+			<latitude>53.91003261681752</latitude>
+			<altitude>0</altitude>
+			<heading>1.508488979528588e-07</heading>
+			<tilt>0</tilt>
+			<range>42872.21982906779</range>
+			<altitudeMode>relativeToGround</altitudeMode>
+		</LookAt>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<Point>
+			<coordinates>14.24757768667275,53.91003261681752,0</coordinates>
+		</Point>
+	</Placemark>
+	<NetworkLink id="9434af54-8020-4d12-8baa-bd2b038cf215">
+		<name>Święty-Krzyż-OBOK</name>
+		<description><![CDATA[<div>Fair-play<div>.</div><div><br></div></div>]]></description>
+		<Camera>
+			<longitude>20.8388046470761</longitude>
+			<latitude>50.90259851508031</latitude>
+			<altitude>29552.27178482246</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<roll>0</roll>
+			<altitudeMode>absolute</altitudeMode>
+		</Camera>
+		<Style>
+			<ListStyle>
+				<listItemType>radioFolder</listItemType>
+				<bgColor>00ffffff</bgColor>
+				<maxSnippetLines>2</maxSnippetLines>
+			</ListStyle>
+		</Style>
+		<Link>
+			<href>https://rychOO.theUNixplace.com/NATO-OTAN/akselnet.pl/2024/Swiety-Krzyz.jpg</href>
+		</Link>
+	</NetworkLink>
+</Document>
+</kml>

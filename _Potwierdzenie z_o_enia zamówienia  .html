@@ -1,0 +1,1118 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <style type="text/css">
+        @font-face {
+font-family: 'Avenir Next';
+font-style: normal;
+font-weight: 400;
+font-display: swap;
+src: url('https://media.douglas.pl/fonts/ed4b9060-b5ab-4379-8840-0b50a15258b7.woff2?type=avenir-next') format('woff2');
+font-style: normal;
+font-display: auto;
+-moz-osx-font-smoothing: grayscale;
+-webkit-font-smoothing: antialiased;
+}
+@font-face {
+font-family: 'Avenir Next Bold';
+font-style: normal;
+font-weight: 800;
+font-display: swap;
+src: url('https://media.douglas.pl/fonts/91799b0e-0ef8-446e-b274-5509412e1242.woff2?type=avenir-next') format('woff2');
+font-style: normal;
+font-display: auto;
+-moz-osx-font-smoothing: grayscale;
+-webkit-font-smoothing: antialiased;
+}
+@font-face {
+font-family: 'Avenir Next Demi Bold';
+font-style: normal;
+font-weight: 600;
+font-display: swap;
+src: url('https://media.douglas.pl/fonts/249228f0-61ac-40cc-a5a5-5609c9816e3f.woff2?type=avenir-next') format('woff2');
+font-style: normal;
+font-display: auto;
+-moz-osx-font-smoothing: grayscale;
+-webkit-font-smoothing: antialiased;
+}
+@font-face {
+font-family: 'Avenir Next Condensed';
+font-style: normal;
+font-weight: 400;
+font-display: swap;
+src: url('https://media.douglas.pl/fonts/3a981265-3718-401f-8ad7-cb4c60f53971.woff2?type=avenir-next-condensed') format('woff2');
+font-style: normal;
+font-display: auto;
+-moz-osx-font-smoothing: grayscale;
+-webkit-font-smoothing: antialiased;
+}
+@font-face {
+font-family: 'Zahrah';
+font-style: normal;
+font-weight: 600;
+font-display: swap;
+src: url('https://media.douglas.pl/fonts/ZahrahforDouglasW04-SmBd.woff2?type=zahrah') format('woff2');
+font-style: normal;
+font-display: auto;
+-moz-osx-font-smoothing: grayscale;
+-webkit-font-smoothing: antialiased;
+}
+
+
+    * {
+        box-sizing: border-box;
+        font-family: 'Avenir Next', Arial, Helvetica, sans-serif;
+    }
+    html, body {
+        font-size: 16px;
+        font-family: 'Avenir Next', Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #000;
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+    }
+    tbody {
+        width: 100%;
+        display: table;
+    }
+    a {
+        font-size: inherit;
+        font-family: 'Avenir Next', Arial, Helvetica, sans-serif;
+    }
+    a,
+    a:focus {
+        color: #000;
+    }
+    table,
+    td {
+        border-collapse: collapse;
+        padding: 0;
+    }
+    b {
+        font-family: 'Avenir Next Demi Bold', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    }
+    img {
+        border: 0;
+        height: auto;
+        line-height: 100%;
+        outline: none;
+        text-decoration: none;
+        -ms-interpolation-mode: bicubic;
+    }
+    .dgl-table {
+        mso-table-lspace: 0;
+        mso-table-rspace: 0;
+        border-collapse: collapse;
+        vertical-align: top;
+        border-spacing: 0;
+        padding: 0;
+        margin: 0 auto;
+        display: table;
+    }
+    .dgl-system-email-return-list {
+        padding-left: 0;
+        margin-bottom: 0;
+    }
+    .dgl-system-email-return-list-steps {
+        list-style-position: inside;
+        padding-bottom: 10px;
+    }
+ .dgl-system-email-title {
+            text-align: left !important;
+            text-transform: uppercase;
+            font-family: Avenir Next !important;
+            font-style: normal !important;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 40px;
+            letter-spacing: 1.5px;
+            padding: 30px 30px 0 30px;
+            margin-top: 40px;
+            margin-bottom: 16px;
+        }
+    @media screen and (max-width: 480px) {
+        .dgl-system-email {
+            width: 100% !important;
+            max-width: 360px !important;
+        }
+        .dgl-system-email-status-spacer-outer {
+            width: 11.5% !important;
+        }
+        .dgl-system-email-topbar {
+            padding: 10px 13px !important;
+        }
+        .dgl-system-email-date-logo-shop {
+        }
+        .dgl-system-email-date-logo-shop-desktop-logo {
+            display: none !important;
+        }
+        .dgl-system-email-douglas-mobile-logo {
+            display: block !important;
+        }
+        .dgl-system-email-banner {
+        }
+        .dgl-system-email-banner-image {
+            max-width: 360px !important;
+            width: 100% !important;
+        }
+        .dgl-system-email-title {
+            font-size: 24px;
+            line-height: 32px;
+        }
+        .dgl-system-email-maintext {
+            padding: 30px 13px 60px 13px !important;
+        }
+        .dgl-system-email-maintext-mobile-paragraph {
+            padding: 0 !important;
+            display: inline !important;
+        }
+        .dgl-system-email-maintext-td-paragraph-first {
+            padding: 30px 13px 0 13px !important;
+        }
+        .dgl-system-email-maintext-td-paragraph-last {
+            padding: 5px 13px 30px 13px !important;
+        }
+        .dgl-system-email-maintext-td-paragraph {
+            padding: 5px 13px 0 13px !important;
+        }
+        .dgl-system-email-maintext-button-wrapper {
+            padding: 30px 13px 30px 13px !important;
+        }
+        .dgl-system-email-maintext-button {
+            width: 100% !important;
+        }
+        .dgl-system-email-yourorder {
+            padding: 15px 13px !important;
+        }
+        .dgl-system-email-yourorder-split {
+            width: 100% !important;
+            display: block !important;
+        }
+        .dgl-system-email-yourorder-split-next {
+            padding-top: 30px !important;
+        }
+        .dgl-system-email-summary {
+            width: 100% !important;
+            padding: 0 13px 30px 13px !important;
+        }
+        .dgl-system-email-summary-price-hr {
+            padding: 0 0 30px 0 !important;
+        }
+        .dgl-system-email-summary-price-hr-last {
+            padding: 15px 0 30px 0 !important;
+        }
+        .dgl-system-email-summary-pricecol {
+            padding-right: 15px !important;
+        }
+        .dgl-system-email-vieworder {
+            padding: 0 13px 60px 13px !important;
+        }
+        .dgl-system-email-vieworder-button {
+            width: auto !important;
+            min-width: auto !important;
+            max-width: 350px !important;
+        }
+        .dgl-system-email-points {
+            padding: 0 13px 30px 13px !important;
+        }
+        .dgl-system-email-package {
+            padding: 0 13px 30px 13px !important;
+        }
+        .dgl-system-email-package-item {
+        }
+        .dgl-system-email-package-item-photo {
+        }
+        .dgl-system-email-package-item-details {
+            padding: 0 0 0 15px !important;
+        }
+        .dgl-system-email-psreturn {
+            padding: 60px 13px 60px 13px !important;
+        }
+        .dgl-system-email-delivery {
+            padding: 0 0 30px 0 !important;
+        }
+        .dgl-system-email-delivery-inner {
+            padding: 30px 13px !important;
+        }
+        .dgl-system-email-getapp {
+            padding: 0 0 30px 0 !important;
+        }
+        .dgl-system-email-getapp-inner {
+            padding: 30px 13px !important;
+        }
+        .dgl-system-email-getapp-qrs {
+            width: 294px !important;
+        }
+        .dgl-system-email-clientinfo {
+            padding: 0 0 30px 0 !important;
+        }
+        .dgl-system-email-clientinfo-inner {
+            padding: 30px 13px !important;
+        }
+        .dgl-system-email-inboxinfo {
+            padding: 0 0 30px 0 !important;
+        }
+        .dgl-system-email-inboxinfo-inner {
+            padding: 30px 13px !important;
+        }
+        .dgl-system-email-questions {
+            padding: 0 0 30px 0 !important;
+        }
+        .dgl-system-email-questions-inner {
+            padding: 30px 13px !important;
+        }
+        .dgl-system-email-questions-split {
+            width: 100% !important;
+            display: block !important;
+        }
+        .dgl-system-email-questions-split-next {
+            padding-top: 47px !important;
+        }
+        .dgl-system-email-impressum {
+            padding: 0 13px !important;
+        }
+        .dgl-system-email-footmint {
+            padding: 15px 13px !important;
+        }
+        .dgl-system-email-button {
+            width: auto !important;
+            min-width: auto !important;
+            max-width: 350px !important;
+        }
+        .dgl-system-email-paymentinfo-label,
+        .dgl-system-email-paymentinfo-value {
+            display: block !important;
+            padding-bottom: 0 !important;
+            line-height: 20px !important;
+        }
+        .dgl-system-email-paymentinfo-value {
+            padding-bottom: 10px !important;
+        }
+        .dgl-system-email-pricing {
+            padding: 0 13px !important;
+        }
+        .dgl-system-email-benefits {
+            width: 360px !important;
+            max-width: 360px !important;
+        }
+        .dgl-system-email-benefits-wrapper {
+            padding: 0 !important;
+        }
+        .dgl-system-email-benefits-block {
+            padding: 30px 30px 0 30px !important;
+        }
+        .dgl-system-email-teaser {
+            padding: 15px 10px !important;
+        }
+        .dgl-system-email-teaser-button {
+            text-align: center !important;
+        }
+        .dgl-system-email-product {
+            width: 78px !important;
+        }
+        .dgl-system-email-product-single {
+            padding: 30px 15px !important;
+        }
+        .dgl-system-email-product-single-wrapper {
+            padding: 0 15px !important;
+        }
+        .dgl-system-email-order-cancellation-text, .dgl-system-email-order-promotion-body {
+            padding-left: 13px !important;
+            padding-right: 13px !important;
+        }
+        .dgl-system-email-order-promotion-headline {
+            width: 285px !important;
+        }
+        .dgl-system-email-order-promotion-code {
+            margin-top: 10px !important;
+            margin-bottom: 30px !important;
+        }
+        .dgl-system-email-order-legal-text {
+            padding: 0 13px 40px !important;
+        }
+        .dgl-system-email-order-fulfillment-by-douglas {
+            display: block !important;
+            margin-top: 5px !important;
+        }
+        .dgl-system-email-space {
+            display: none !important;
+        }
+        .dgl-system-email-return-title {
+            font-size: 24px !important;
+            line-height: 32px !important;
+            padding: 15px 13px 0 13px !important;
+        }
+        .dgl-system-email-additional-question {
+            padding: 0 13px 50px 13px !important;
+        }
+        .dgl-system-email-additional-question-paragraph {
+            padding: 0 13px 60px 13px !important;
+        }
+        .dgl-system-email-return-package {
+            padding: 0 13px 15px 13px !important;
+        }
+        .dgl-system-email-maintext-return-paragraph {
+            padding: 30px 13px 25px 13px !important;
+        }
+        .dgl-system-email-product-single-return {
+            padding: 15px !important;
+        }
+        .dgl-system-email-return-info-steps {
+            padding-bottom: 15px !important;
+        }
+        .dgl-system-email-greeting-card {
+            width: 150px !important;
+        }
+    }
+</style>
+
+
+    <title>Potwierdzenie zamówienia</title>
+</head>
+<body bgcolor="#FFFFFF">
+<table class="dgl-system-email dgl-table" style="width: 100%; max-width: 600px;" width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+    <tbody>
+        <div style="display: none; max-height: 0px; overflow: hidden;" data-test="preview">
+    Otrzymaliśmy Twoje zamówienie. Gdy tylko zostanie wysłane, poinformujemy Cię o tym e-mailem.
+</div>
+<!-- Insert ‌ hack after hidden preview text -->
+<div style="display: none; max-height: 0px; overflow: hidden;">
+    &#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;
+</div>
+
+
+<tr>
+    <td>
+        <table class="dgl-table" width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#F2F2F2">
+            <tbody>
+            <tr>
+                <td class="dgl-system-email-topbar"
+                    style="color: #8A8A8A; font-size: 11px; line-height: 13px; letter-spacing: 0.5px; text-align: center; padding: 10px 30px; font-family: 'Avenir Next', Arial, Helvetica, sans-serif;">
+                        Dodaj adres e-mail  <a href="mailto:info@douglas.pl" target="_blank"><font color="#8A8A8A">Douglas Info</font></a> do swojej książki adresowej, aby nasze wiadomości e-mail wyświetlały się zawsze poprawnie.
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </td>
+</tr>
+<tr>
+    <td>
+        <table class="dgl-table" width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#C3EAE4"
+               data-test="header-bar">
+            <tbody>
+            <tr>
+                <td style="height: 10px; line-height: 10px;"></td>
+            </tr>
+            </tbody>
+        </table>
+    </td>
+</tr>
+<tr>
+    <td class="dgl-system-email-date-logo-shop" style="padding: 15px 0;">
+        <table class="dgl-table" width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+            <tbody>
+            <tr>
+                <td valign="bottom"
+                    style="font-size: 12px; line-height: 18px; letter-spacing: 1px; color: #000000; padding-left: 15px; text-align: left; width: 25%; font-family: 'Avenir Next', Arial, Helvetica, sans-serif;">
+                    10.09.2024
+                </td>
+                <td valign="bottom" class="dgl-system-email-date-logo-shop-desktop-logo"
+                    style="text-align: center; line-height: 18px; width: 50%;">
+                    <img alt="DOUGLAS" style="width: 102px; display: block; margin: 0 auto;" height="auto"
+                         src="https://media.douglas.pl/medias/Douglas-Banner-Logo-Black.png?context=bWFzdGVyfGltYWdlc3wxMzk2fGltYWdlL3BuZ3xhRFZqTDJoaU5DODVNell5TnpZME56STJNekF5TDBSdmRXZHNZWE5mUW1GdWJtVnlYMHh2WjI5ZlFteGhZMnN1Y0c1bnxlNzNiYTk5ZjU1YjI3YzZjNDZiNDU0MDU5MGVlNjg0MjhmMWNjY2ZkYWMzZGZmMjM3NDY5OTlkNGI0MzUxYWEz"/>
+                </td>
+                <td valign="bottom" style="padding-right: 15px; text-align: right; width: 25%;"></td>
+            </tr>
+            </tbody>
+        </table>
+    </td>
+</tr>
+<tr>
+    <td class="dgl-system-email-douglas-mobile-logo" style="padding: 15px 0; text-align: center; display: none;">
+        <img alt="DOUGLAS" width="102" height="auto" style="width: 102px; height: auto; display: block; margin: 0 auto;" height="auto"
+             src="https://media.douglas.pl/medias/Douglas-Banner-Logo-Black.png?context=bWFzdGVyfGltYWdlc3wxMzk2fGltYWdlL3BuZ3xhRFZqTDJoaU5DODVNell5TnpZME56STJNekF5TDBSdmRXZHNZWE5mUW1GdWJtVnlYMHh2WjI5ZlFteGhZMnN1Y0c1bnxlNzNiYTk5ZjU1YjI3YzZjNDZiNDU0MDU5MGVlNjg0MjhmMWNjY2ZkYWMzZGZmMjM3NDY5OTlkNGI0MzUxYWEz"/>
+    </td>
+</tr>
+
+
+    <tr>
+    <td>
+        <table class="dgl-table" width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+            <tbody>
+            <tr>
+                <td colspan="3">
+                    <table class="dgl-table" width="100%" cellspacing="0" cellpadding="0" border="0"
+                           style="font-size: 12px; line-height: 18px">
+                        <tbody>
+                        <tr>
+                            <td rowspan="3" class="dgl-system-email-status-spacer-outer" style="width: 88px;"></td>
+                            <td rowspan="3" style="text-align: center; width: 35px;" width="35">
+                                <img alt="1" style="display: inline-block; max-width: 35px;" width="35" height="auto"
+                                     src="https://media.douglas.pl/medias/Douglas-Icons-TMail-Step-Check.png?context=bWFzdGVyfGltYWdlc3w3NzN8aW1hZ2UvcG5nfGFHSTRMMmhqWWk4NU16WXlOelkwTURjd09UUXlMMFJ2ZFdkc1lYTmZTV052Ym5OZlZFMWhhV3hmVTNSbGNGOURhR1ZqYXk1d2JtY3wxZGU3NjdjMjJjMjE3NjU5ZGU3YjMwOGZiZTY1OTRjMGU0NDhlZDU5ZDViOGRlODBiYzlmYjQwMjZkMjkyYzhj">
+                            </td>
+                            <td rowspan="3" style="width: 10px;"></td>
+                            <td style="text-align: center; height: 17px;"></td>
+                            <td rowspan="3" style="width: 10px;"></td>
+                            <td rowspan="3" style="text-align: center; width: 35px;" width="35">
+                                <img alt="2" style="display: inline-block; max-width: 35px;" width="35" height="auto"
+                                     src="https://media.douglas.pl/medias/Douglas-Icons-TMail-Step-2.png?context=bWFzdGVyfGltYWdlc3w4MjJ8aW1hZ2UvcG5nfGFEYzVMMmhqWXk4NU16WXlOelkwTURBMU5EQTJMMFJ2ZFdkc1lYTmZTV052Ym5OZlZFMWhhV3hmVTNSbGNGOHlMbkJ1Wnd8MjE2ZmY2NDRmM2IwNjI2NGQ2MGU2NDc1ZjA1ZTk5MzVlODZkNDZlYzZkNzhhMjcxZDJiYmU0YTRhMmI5ZmJmZg">
+                            </td>
+                            <td rowspan="3" style="width: 10px;"></td>
+                            <td style="text-align: center; height: 17px;"></td>
+                            <td rowspan="3" style="width: 10px;"></td>
+                            <td rowspan="3" style="text-align: center; width: 35px;" width="35">
+                                <img alt="3" style="display: inline-block; max-width: 35px;" width="35" height="auto"
+                                     src="https://media.douglas.pl/medias/Douglas-Icons-TMail-Step-3.png?context=bWFzdGVyfGltYWdlc3w5MzV8aW1hZ2UvcG5nfGFHSTVMMmhqT0M4NU16WXlOelkwTVRNMk5EYzRMMFJ2ZFdkc1lYTmZTV052Ym5OZlZFMWhhV3hmVTNSbGNGOHpMbkJ1Wnd8ZDJjNGU0N2M4ODdmZDg4MmNjYTQ2M2NjOTc0ZmIzMmRiYTU1NDE3MDAwZjhmNzEwMTg3ZTZhNmYwNjI1ZWIyMA">
+                            </td>
+                            <td rowspan="3" class="dgl-system-email-status-spacer-outer" style="width: 88px;"></td>
+                        </tr>
+                        <tr>
+                            <td valign="top" style="height: 1px; padding: 0; margin: 0;">
+                                <hr style="width:100%; height: 1px; border-top: 1px solid #000000; margin: 0;"/>
+                            </td>
+                            <td valign="top" style="height: 1px; padding: 0; margin: 0;">
+                                <hr style="width:100%; height: 1px; border-top: 1px solid #000000; margin: 0;"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;"></td>
+                            <td style="text-align: center;"></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: center; width: 35%; font-size: 12px; line-height: 18px; letter-spacing: 0.5px; color: #000000;"
+                    data-test="status-step-1-label">
+                    Przyjęte
+                </td>
+                <td style="text-align: center; width: 26%; font-size: 12px; line-height: 18px; letter-spacing: 0.5px; color: #000000;"
+                    data-test="status-step-2-label">
+                    Wysłane
+                </td>
+                <td style="text-align: center; width: 35%; font-size: 12px; line-height: 18px; letter-spacing: 0.5px; color: #000000;"
+                    data-test="status-step-3-label">
+                    Doręczone
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </td>
+</tr>
+
+
+        <tr>
+        <td>
+            <table class="dgl-table" width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+                <tbody>
+                <tr>
+                    <td class="dgl-system-email-title">
+                            Dziękujemy za złożenie zamówienia
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <table class="dgl-table" width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+                <tbody>
+                <tr>
+                    <td class="dgl-system-email-maintext"
+                        style="padding: 30px 30px 60px 30px; font-size: 14px; line-height: 24px; letter-spacing: 0.5px;">Cześć szer. mgr Ryszard,<br/><br/>
+                            dziękujemy za zakupy na douglas.pl.
+                        <span class="dgl-system-email-maintext-mobile-paragraph"
+                              style="display: block; padding-top: 15px;">Gdy Twoja paczka zostanie wysłana, poinformujemy Cię o tym e-mailem.<br> <br>
+Potwierdzenie wysłania zamówienia oraz link do jego śledzenia otrzymasz w następnej wiadomości.
+
+
+ <br>
+<br>
+<b>WAŻNE!</b><br>
+                                                                          Zmieniliśmy proces zwrotów zamówień online. Zapoznaj się z nową instrukcją <a href="https://www.douglas.pl/pl/cp/helpshipping/help-shipping">tutaj</a>
+</span><br/>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <table class="dgl-table" width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+                <tbody>
+                    <tr>
+    <td>
+        <hr style="background: #BFBFBF; border-top: 1px solid #BFBFBF; margin: 0 0 30px 0; padding: 0;"/>
+    </td>
+</tr>
+
+
+                </tbody>
+            </table>
+        </td>
+    </tr>
+                <tr>
+    <td class="dgl-system-email-yourorder" style="padding: 30px;">
+        <table class="dgl-table" width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+            <tbody>
+            <tr>
+                <td style="padding-bottom: 30px;">
+                    <table class="dgl-table" width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+                        <tbody>
+                        <tr>
+                            <td colspan="2" style="font-size: 18px; line-height: 24px; letter-spacing: 0.5px; color: #000000;" data-test="your-order">
+                                <b>Twoje zamówienie z dnia  10.09.2024</b>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+                <tr>
+    <td style="padding-bottom: 30px;">
+        <table class="dgl-table" width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+            <tbody>
+            <tr>
+                                <th class="dgl-system-email-yourorder-split" style="width: 50%; display: inline-block;" valign="top" align="center">
+                    <table class="dgl-table" width="100%" border="0" align="center" cellpadding="0" cellspacing="0"
+                           bgcolor="#FFFFFF">
+                        <tbody>
+                        <tr>
+                            <td style="font-size: 14px; line-height: 20px; letter-spacing: 0.5px; color: #000000; display: inline-block; padding-bottom: 5px;">
+                                <b>Numer zamówienia</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-size: 14px; line-height: 22px; letter-spacing: 0.5px; color: #000000; font-weight: 400">
+                                DGLPL0016062501
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </th>
+                                <th class="dgl-system-email-yourorder-split dgl-system-email-yourorder-split-next"
+                    style="width: 49%; display: inline-block;" valign="top" align="center">
+                    <table class="dgl-table" width="100%" border="0" align="center" cellpadding="0" cellspacing="0"
+                           bgcolor="#FFFFFF">
+                        <tbody>
+                        <tr>
+                            <td style="font-size: 14px; line-height: 20px; letter-spacing: 0.5px; color: #000000; display: inline-block; padding-bottom: 5px;">
+                                <b>Forma płatności</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-size: 14px; line-height: 22px; letter-spacing: 0.5px; color: #000000; font-weight: 400">
+                                    Płatność kartą
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </th>
+            </tr>
+            </tbody>
+        </table>
+    </td>
+</tr>
+<tr>
+    <td>
+        <table class="dgl-table" width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+            <tbody>
+            <tr>
+                                <th class="dgl-system-email-yourorder-split" style="width: 50%; display: inline-block;" valign="top" align="center">
+                    <table class="dgl-table" width="100%" border="0" align="center" cellpadding="0" cellspacing="0"
+                           bgcolor="#FFFFFF">
+                        <tbody>
+                        <tr>
+                            <td style="font-size: 14px; line-height: 20px; letter-spacing: 0.5px; color: #000000; display: inline-block; padding-bottom: 5px;">
+                                <b>Adres rachunku</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-size: 14px; line-height: 22px; letter-spacing: 0.5px; color: #000000; font-weight: 400">
+                                    Ministerstwo Obrony Narodowej<br/>
+                                szer. mgr Ryszard CZEKAJ SAGE HO
+                                <br/>
+                                Al. Niepodległości
+                                    218
+                                <br/>
+                                00-911 Warszawa<br/>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </th>
+                                        <th class="dgl-system-email-yourorder-split dgl-system-email-yourorder-split-next"
+                        style="width: 49%; display: inline-block;" valign="top" align="center">
+                        <table class="dgl-table" width="100%" border="0" align="center" cellpadding="0" cellspacing="0"
+                               bgcolor="#FFFFFF">
+                            <tbody>
+                            <tr>
+                                <td style="font-size: 14px; line-height: 20px; letter-spacing: 0.5px; color: #000000; display: inline-block; padding-bottom: 5px;">
+                                        <b>Adres dostawy</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-size: 14px; line-height: 22px; letter-spacing: 0.5px; color: #000000; font-weight: 400"
+                                    data-test="delivery-address">
+                                                Wybrany paczkomat <br/>
+    szer. mgr Ryszard CZEKAJ SAGE HO <br/>
+    Przy pawilonie handlowym<br/>
+    26 Marca
+    94
+<br/>
+44-300 Wodzisław Śląski <br/>
+
+
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </th>
+            </tr>
+            </tbody>
+        </table>
+    </td>
+</tr>
+
+
+            </tbody>
+        </table>
+    </td>
+</tr>
+
+
+        <tr>
+    <td class="dgl-system-email-points" style="padding: 0 30px 30px 30px;">
+        <table class="dgl-table" width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+            <tbody>
+            <tr>
+                <td style="border: 1px solid #E6E6E6; padding: 15px;"
+                    data-test="loyalty-points">
+                    <table class="dgl-table" width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+                        <tbody>
+                        <tr>
+                            <td valign="middle">
+                                <div align="center"><!--[if mso]>
+                                    <v:roundrect href="#" style="height: 60px; v-text-anchor: middle; width: 60px;" arcsize="600%"
+                                                 stroke="f" fillcolor="#FFEBF0">
+                                        <w:anchorlock/>
+                                        <center>
+                                    <![endif]-->
+                                    <span style="background: #FFEBF0; border-radius:600px; color:#000000; display:inline-block; font-size: 20px; line-height:60px; text-align:center; width:60px; -webkit-text-size-adjust: none;">
+                                        6
+                                    </span>
+                                    <!--[if mso]>
+                                    </center>
+                                    </v:roundrect>
+                                    <![endif]--></div>
+                            </td>
+                            <td valign="middle" style="padding-left: 15px; font-size: 12px; line-height: 18px; letter-spacing: 0.5px; color: #000000;">
+                                Za te zakupy otrzymasz 6 punktów.
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </td>
+</tr>
+
+
+                        <tr>
+    <td class="dgl-system-email-package" style="padding: 0 30px 30px 30px;" data-test="delivery-order-group">
+        <table class="dgl-table" width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+            <tbody>
+<tr>
+    <td colspan="3" style="border: 1px solid #E6E6E6; padding: 15px;">
+        <table class="dgl-table" width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+            <tbody data-test="your-package">
+                        <tr>
+                <td colspan="2"
+                    style="padding-bottom: 5px; font-size: 16px; line-height: 25px; letter-spacing: 0.5px; color: #000000;">
+                        <b>Zamówione produkty</b>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"
+                    style="font-size: 14px; line-height: 20px; letter-spacing: 0.5px; color: #000000;">
+                    <b>wysłane przez Douglas</b>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </td>
+</tr>
+
+
+                <tr>
+    <td style="border: 1px solid #E6E6E6; padding: 15px;">
+        <table class="dgl-table" width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+            <tbody>
+            <tr>
+                <td rowspan="3" style="width: 94px;">
+                        <img alt="product" style="display: inline-block; max-width: 94px;" width="94" height="auto"
+                             src="https://media.douglas.pl/medias/6StkY11051570-0-dgl-PL.jpg?context=bWFzdGVyfGltYWdlc3wxMjg0Nzd8aW1hZ2UvanBlZ3xhRFk0TDJobE15ODBOREV6TXpJME1ERTBNemt3TWk4MlUzUnJXVEV4TURVeE5UY3dYekJmWkdkc0xWQk1MbXB3Wnd8YjYxYTY2MzAwNmY1OGMyNzBmZDM1MzAxNDg0NTE0ZmE1MGQxMjRhZGM0MGU2NGQ2MDJjNjQ2MDBiNjdlOGE0YQ&grid=true"/>
+                </td>
+                <td colspan="2" class="dgl-system-email-package-item-details" data-test="entry-item-0" style="padding: 0 15px 0 30px;">
+                    <table class="dgl-table" width="100%" border="0" align="center" cellpadding="0" cellspacing="0"
+                           bgcolor="#FFFFFF">
+                        <tbody>
+                        <tr>
+                            <td>
+                                <table class="dgl-table" width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+                                    <tbody>
+                                    <tr>
+                                        <td style="font-size: 14px; line-height: 20px; letter-spacing: 0.5px; color: #000000; padding-bottom: 5px;">
+                                            <b>
+                                            </b>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="font-size: 14px; line-height: 20px; letter-spacing: 0.5px; color: #000000; padding-bottom: 5px;">
+                                            <b>
+                                                        NIVEA
+                                                            - MEN Sensitive PRO Ultra-Calming, 500 ml
+                                            </b>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="font-size: 14px; line-height: 20px; letter-spacing: 0.5px; color: #000000; padding-bottom: 5px;">
+                                                <b>500 ml</b>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding-bottom: 15px;">
+                                <table class="dgl-table" width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+                                    <tbody>
+                                    <tr>
+                                        <td colspan="2"
+                                            style="font-size: 14px; line-height: 22px; letter-spacing: 0.5px; color: #000000;">
+                                                Pielęgnacja
+                                                500 ml
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                         <tr>
+                            <td>
+                                <table class="dgl-table" width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+                                    <tbody>
+                                    <tr>
+                                        <td style="font-size: 14px; line-height: 22px; letter-spacing: 0.5px; color: #000000;">
+                                            1 sztuk
+                                        </td>
+                                        <td style="font-size: 14px; line-height: 22px; letter-spacing: 0.5px; color: #000000; text-align: right;">
+                                            <b>13,99 zł</b>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                         </tbody>
+                    </table>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </td>
+</tr>
+
+
+            </tbody>
+        </table>
+    </td>
+</tr>
+
+
+                    <tr>
+    <td class="dgl-system-email-summary" style="padding: 0 30px 60px 30px;">
+        <table class="dgl-table" width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+            <tbody>
+                <tr>
+    <td>
+        <hr style="background: #BFBFBF; border-top: 1px solid #BFBFBF; margin: 0 0 30px 0; padding: 0;"/>
+    </td>
+</tr>
+
+
+            <tr>
+                <td style="padding-bottom: 15px;" data-test="pricing-break-down-sub-total-without-promotions">
+                    <table class="dgl-table" width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+                        <tbody>
+                        <tr>
+                            <td style="font-size: 14px; line-height: 22px; letter-spacing: 0.5px; color: #000000;">
+                                Suma pośrednia
+                            </td>
+                            <td style="font-size: 14px; line-height: 22px; letter-spacing: 0.5px; color: #000000; text-align: right;">
+                                13,99 zł
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-bottom: 15px;" data-test="pricing-break-down-delivery-cost">
+                    <table class="dgl-table" width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+                        <tbody>
+                        <tr>
+                            <td style="font-size: 14px; line-height: 22px; letter-spacing: 0.5px; color: #000000;">
+                                    Koszty dostawy
+                            </td>
+                            <td style="font-size: 14px; line-height: 22px; letter-spacing: 0.5px; color: #000000; text-align: right;">
+                                    9,90 zł
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-bottom: 15px;" data-test="pricing-break-down-total-invoice-amount">
+                    <table class="dgl-table" width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+                        <tbody>
+                        <tr>
+                            <td style="font-size: 14px; line-height: 22px; letter-spacing: 0.5px; color: #000000;">
+                                Razem do zapłaty
+                            </td>
+                            <td style="font-size: 14px; line-height: 22px; letter-spacing: 0.5px; color: #000000; text-align: right;">
+                                23,89 zł
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+    <td>
+        <hr style="background: #BFBFBF; border-top: 1px solid #BFBFBF; margin: 0 0 30px 0; padding: 0;"/>
+    </td>
+</tr>
+
+
+            <tr>
+                <td data-test="pricing-break-down-total-amount-including-tax">
+                    <table class="dgl-table" width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+                        <tbody>
+                        <tr>
+                            <td style="font-size: 14px; line-height: 22px; letter-spacing: 0.5px; color: #000000;">
+                                <b>Kwota łącznie</b>
+                                <span style="color: #8A8A8A; font-size: 12px; line-height: 18px; padding-left: 15px;">W cenie uwzględniono podatek VAT</span>
+                            </td>
+                            <td style="font-size: 14px; line-height: 22px; letter-spacing: 0.5px; color: #000000; text-align: right;">
+                                <b>23,89 zł</b>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </td>
+</tr>
+
+
+                <tr>
+    <td class="dgl-system-email-vieworder" style="padding-bottom: 20px" data-test="view-order">
+<table style="table-layout: fixed" class="dgl-table" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tbody>
+    <tr align="center">
+        <td align="center" class="dgl-system-email-vieworder-button" valign="center"
+            style="text-align: center; padding-bottom: 60px; width: auto !important; height: 55px; padding: 0 11px;border: 2px solid #212121; background: #FFFFFF;">
+            <a class="dgl-system-email-vieworder-button-link"
+               href="https://www.douglas.pl/pl/account/orders/DGLPL0016062501"
+               style="display:block; text-align: center; font-weight: bold; font-size: 12px; line-height: 55px; text-decoration:none !important; text-decoration:none; letter-spacing: 1px; text-transform: uppercase; color: #212121; padding:0 11px;font-family: 'Avenir Next Demi Bold', Arial, Helvetica, sans-serif;">
+                Sprawdź zamówienie
+            </a>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+
+    </td>
+</tr>
+
+
+                        <tr>
+    <td class="dgl-system-email-psreturn" style="padding: 0 30px 60px 30px;">
+        <table class="dgl-table" width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+            <tbody>
+            <tr>
+                <td>
+                    <p style="font-size: 14px; line-height: 22px; letter-spacing: 0.5px; color: #000000; padding: 0 0 15px 0; margin: 0;"
+                       data-test="greeting">
+                        Pozdrawiamy serdecznie,<br/>Twój Zespół Douglas</p>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </td>
+</tr>
+
+                        <tr>
+    <td>
+        <hr style="background: #BFBFBF; border-top: 1px solid #BFBFBF; margin: 0 0 30px 0; padding: 0;"/>
+    </td>
+</tr>
+
+
+                        <tr>
+    <td class="dgl-system-email-clientinfo" style="padding: 0 30px 30px 30px;">
+        <table class="dgl-table" width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#F2F2F2">
+            <tbody>
+            <tr>
+                <td class="dgl-system-email-clientinfo-inner" style="padding: 30px;">
+                    <table class="dgl-table" width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#F2F2F2">
+                        <tbody>
+                        <tr>
+                            <td style="background: #F2F2F2; width: 45px;" width="45">
+                                <img alt="info" style="display: inline-block; max-width: 45px;" width="45" height="auto"
+                                     src="https://media.douglas.pl/medias/Douglas-Icons-TMail-Client-Info.png?context=bWFzdGVyfGltYWdlc3wxMDEwfGltYWdlL3BuZ3xhREpoTDJoaVpTODVNell5TnpZME5EWTBNVFU0TDBSdmRXZHNZWE5mU1dOdmJuTmZWRTFoYVd4ZlEyeHBaVzUwWDBsdVptOHxhNTVhNmQ4ODUyOWU2MjE0YmVmMzg3ZTBjZGViY2U1ODgwOGM0OGFiYjA1NzVkN2IyZTg2ZThkMGNlMWY4N2Rl">
+                            </td>
+                            <td style="padding-left: 15px; font-size: 14px; line-height: 20px; color: #000000; font-family: 'Avenir Next Demi Bold', Arial, Helvetica, sans-serif;" data-test="your-customer-number">
+                                <b>Twój numer klienta: 01143369184514</b>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </td>
+</tr>
+
+
+                <tr>
+    <td class="dgl-system-email-questions" style="padding: 0 30px 30px 30px">
+        <table class="dgl-table" width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#F2F2F2">
+            <tbody>
+            <tr>
+                <td class="dgl-system-email-questions-inner" style="background: #F2F2F2; padding: 30px;">
+                    <table class="dgl-table" width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#F2F2F2">
+                        <tbody>
+                        <tr>
+                            <td colspan="2"
+                                style="font-size: 18px; padding-bottom: 30px; line-height: 24px; letter-spacing: 0.5px; color: #000000; font-family: 'Avenir Next Demi Bold', Arial, Helvetica, sans-serif;">
+                                <b>Masz dodatkowe pytania?</b></td>
+                        </tr>
+                        <tr valign="top">
+                            <th class="dgl-system-email-questions-split" style="width: 50%; display: inline-block; font-weight: 400" align="center">
+                                <table class="dgl-table" width="100%" border="0" align="center" cellpadding="0" cellspacing="0"
+                                       bgcolor="#F2F2F2">
+                                    <tbody>
+                                    <tr>
+                                        <td style="font-size: 14px; line-height: 22px; letter-spacing: 0.5px; padding-bottom: 15px;"><a
+                                                href="#"
+                                                style="text-decoration: underline; color: #000000; font-family: 'Avenir Next', Arial, Helvetica, sans-serif;"><a href="https://www.douglas.pl/pl/cp/help/help" target="_blank"><font color="#000000">Wszystkie tematy dotyczące pomocy</font></a></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="font-size: 14px; line-height: 22px; letter-spacing: 0.5px;"><a href="#"
+                                                style="text-decoration: underline; color: #000000; font-family: 'Avenir Next', Arial, Helvetica, sans-serif;">
+                                            <a href="mailto:info@douglas.pl" target="_blank"><font color="#000000">Skontaktuj się przez e-mail</font></a></a></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </th>
+                            <th class="dgl-system-email-questions-split dgl-system-email-questions-split-next"
+                                style="width: 50%; display: inline-block; font-weight: 400" align="center">
+                                <table class="dgl-table" width="100%" border="0" align="center" cellpadding="0" cellspacing="0"
+                                       bgcolor="#F2F2F2">
+                                    <tbody>
+                                    <tr>
+                                        <td style="font-size: 14px; line-height: 22px; letter-spacing: 0.5px; font-family: 'Avenir Next', Arial, Helvetica, sans-serif;">
+                                            Biuro Obsługi Klienta
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="font-size: 14px; line-height: 28px; letter-spacing: 0.5px; font-weight: 600; font-family: 'Avenir Next Demi Bold', Arial, Helvetica, sans-serif;">
+                                            <b>nr tel. 22 278 14 14 (opłata za połączenie jest zgodna ze stawką operatora)</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="font-size: 14px; line-height: 22px; letter-spacing: 0.5px; font-family: 'Avenir Next', Arial, Helvetica, sans-serif;">
+                                            Pon. - Pt. w godz. 8:00 - 20:00, Sob. 10:00 - 18:00
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </th>
+                        </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </td>
+</tr>
+
+                <tr>
+    <td style="padding-top: 30px;">
+        <table class="dgl-table" width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+            <tbody>
+            <tr>
+                <td class="dgl-system-email-impressum" style="padding: 0 30px;">
+                    <b style="font-size: 11px; line-height: 13px; padding-bottom: 5px; display: inline-block; color: #000000; font-family: 'Avenir Next Demi Bold', Arial, Helvetica, sans-serif;">
+                        Dane firmy
+                    </b>
+                        <p style="font-size: 11px; line-height: 13px; padding-bottom: 15px; margin: 0; color: #8A8A8A; font-family: 'Avenir Next', Arial, Helvetica, sans-serif;">
+                            Douglas Polska Sp. z o.o. | ul. Zajęcza 4 | 00-351 Warszawa Telefon: 801 - 101 800 (opłata za połączenie jest zgodna ze stawką operatora) E-Mail: info@douglas.pl
+                        </p>
+                        <p style="font-size: 11px; line-height: 13px; padding-bottom: 15px; margin: 0; color: #8A8A8A; font-family: 'Avenir Next', Arial, Helvetica, sans-serif;">
+                            &nbsp;
+                        </p>
+                        <p style="font-size: 11px; line-height: 13px; padding-bottom: 30px; margin: 0; color: #8A8A8A; font-family: 'Avenir Next', Arial, Helvetica, sans-serif;">
+                            POLITYKA PRYWATNOŚCI I OCHRONA DANYCH OSOBOWYCH  Administratorem Państwa danych osobowych jest Douglas Polska Sp. z o.o. z siedzibą w Warszawie ul. Zajęcza 4, 00-351 Warszawa.
+                        </p>
+                </td>
+            </tr>
+                <tr>
+                    <td class="dgl-system-email-impressum" style="padding: 0 30px;" data-test="general-terms-and-conditions">
+                        <p style="font-size: 11px; line-height: 13px; padding-bottom: 30px; margin: 0; color: #8A8A8A;">
+                            Więcej informacji na temat przetwarzania danych znajdą Państwo w Polityce prywatności <a href="https://www.douglas.pl/help/bezpieczenstwo-i-ochrona-danych-osobowych" target="_blank"><font color="#8A8A8A">tutaj</font></a> i <a href="https://www.douglas.pl/help/regulamin" target="_blank"><font color="#8A8A8A">Regulminie Mój Douglas</font></a> Wszelkie pytanie związane z kwestiami przetwarzania Państwa danych osobowych proszę kierować na adres e-mail: rodo@douglas.pl.
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </td>
+</tr>
+<tr>
+    <td>
+        <table class="dgl-table" width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#E6F6F4"
+               data-test="confidential-link">
+            <tbody>
+            <tr>
+                <td class="dgl-system-email-footmint"
+                    style="font-size: 11px; line-height: 13px; letter-spacing: 0.5px; text-align: left; padding: 15px 30px; font-family: 'Avenir Next', Arial, Helvetica, sans-serif;">
+                    ten e-mail nie jest przeznaczony dla Ciebie? W takim razie kliknij <a href="/cp/helpcontact/help-contact" style="font-size: 11px" target="_blank"><font color="#000000"> tutaj</font></a>.
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </td>
+</tr>
+
+
+    </tbody>
+</table>
+</body>
+</html>

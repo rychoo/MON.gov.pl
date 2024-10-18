@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<sp9ryc>
+(c) 2023-2024 I'm commercial! All from this code 33% after TAX income for me ;) ; TOR.taxi
++48 882723907
+
+37w2SC3qoDvtXBC5Be1e2CbKPx5gwRDhDv
+3PCFHnY1ujpCchFNSBAeaECZ8rGyScoRLT
+
+PLN:
+Beneficjent: Ryszard Czekaj
+IBAN: LT773250049791461533
+Kod BIC: REVOLT21
+Kod BIC banku pośredniczącego: BARCGB22
+Adres beneficjenta: Zwyciestwa pl., 8/24, 44-300, Wodzislaw Slaski, Poland
+Bank lub instytucja płatnicza: Revolut Bank UAB
+Adres banku: Konstitucijos ave. 21B, 08130, Vilnius, Lithuania
+
+DKK:
+Beneficjent: Ryszard Czekaj
+IBAN: LT773250049791461533
+Kod BIC: REVOLT21
+Kod BIC banku pośredniczącego: BARCGB22
+Adres beneficjenta: Zwyciestwa pl., 8/24, 44-300, Wodzislaw Slaski, Poland
+Bank lub instytucja płatnicza: Revolut Bank UAB
+Adres banku: Konstitucijos ave. 21B, 08130, Vilnius, Lithuania
+
+Local EUR:
+Beneficjent: Ryszard Czekaj
+IBAN: LT773250049791461533
+Kod BIC: REVOLT21
+Adres beneficjenta: Zwyciestwa pl., 8/24, 44-300, Wodzislaw Slaski, Poland
+Bank lub instytucja płatnicza: Revolut Bank UAB
+Adres banku: Konstitucijos ave. 21B, 08130, Vilnius, Lithuania
+
+International EUR:
+Beneficjent: Ryszard Czekaj
+IBAN: LT773250049791461533
+Kod BIC: REVOLT21
+Kod BIC banku pośredniczącego: CHASDEFX
+Adres beneficjenta: Zwyciestwa pl., 8/24, 44-300, Wodzislaw Slaski, Poland
+Bank lub instytucja płatnicza: Revolut Bank UAB
+Adres banku: Konstitucijos ave. 21B, 08130, Vilnius, Lithuania
+
+International USD:
+Beneficjent: Ryszard Czekaj
+IBAN: LT773250049791461533
+Kod BIC: REVOLT21
+Kod BIC banku pośredniczącego: CHASDEFX
+Adres beneficjenta: Zwyciestwa pl., 8/24, 44-300, Wodzislaw Slaski, Poland
+Bank lub instytucja płatnicza: Revolut Bank UAB
+Adres banku: Konstitucijos ave. 21B, 08130, Vilnius, Lithuania
+
+Local USD:
+Beneficjent: Ryszard Czekaj
+IBAN: LT773250049791461533
+Kod BIC: REVOLT21
+Adres beneficjenta: Zwyciestwa pl., 8/24, 44-300, Wodzislaw Slaski, Poland
+Bank lub instytucja płatnicza: Revolut Bank UAB
+Adres banku: Konstitucijos ave. 21B, 08130, Vilnius, Lithuania
+
+CZK:
+Beneficjent: Ryszard Czekaj
+IBAN: LT773250049791461533
+Kod BIC: REVOLT21
+Kod BIC banku pośredniczącego: BARCGB22
+Adres beneficjenta: Zwyciestwa pl., 8/24, 44-300, Wodzislaw Slaski, Poland
+Bank lub instytucja płatnicza: Revolut Bank UAB
+Adres banku: Konstitucijos ave. 21B, 08130, Vilnius, Lithuania
+.
+
+</sp9ryc>
+  <Placemark>
+    <name>Wodzisław Śląski</name>
+    <description><![CDATA[woj. śląskie, powiat Wodzisławski, gmina Wodzisław Śląski<br><a alt="Powódź 2010 * Flood 2010" href="http://www.freeshell.org/"><img alt="Powódź w Polsce * Flood in Poland" style="width:144px" src="http://RYCHoo.TheUnixPlace.com/icon04.jpg" border="0"></a>]]></description>
+    <styleUrl>#style248</styleUrl>
+    <Point>
+      <coordinates>18.4719102,50.003137000000009,0</coordinates>
+    </Point>
+  </Placemark>
+</kml>

@@ -1,0 +1,149 @@
+.slds-form-element__label:Empty {
+	display: none;
+}
+.STIClass .slds-form-element__label{
+	font-weight: bold;
+    font-size:13px;
+	width: max-content;
+}
+.labelblack .slds-form-element__label{
+	font-weight: bold;
+    font-size:13px;
+	width: max-content;
+    color: black;
+    visibility: visible
+}
+.labelGrey .slds-form-element__label{
+	font-weight: bold;
+    font-size:13px;
+	width: max-content;
+    color: rgb(102, 100, 100);
+    visibility: visible
+}
+
+.labelGrey .slds-has-error .slds-form-element__help {
+    color: var(--lwc-colorTextError,rgb(234, 0, 30));
+    position:absolute;
+   
+}
+.stiAdminInfo .slds-form-element_horizontal.slds-form-element_1-col .slds-form-element__control, .slds-form_horizontal .slds-form-element.slds-form-element_1-col .slds-form-element__control, .slds-form_stacked .slds-form-element_horizontal.slds-form-element_1-col .slds-form-element__control {
+    padding-left: 33%;
+}
+
+
+.STIques .slds-form-element__label{
+	font-weight: bold;
+    font-size:13px;
+	width: max-content;
+    color: rgb(102, 100, 100);
+    visibility: visible;
+    padding-top: 0px;
+}
+
+.STIques .slds-has-error .slds-form-element__help {
+    color: var(--lwc-colorTextError,rgb(234, 0, 30));
+    width: max-content;
+
+   
+}
+ .overRideLabelBold .slds-form-element__label{
+	font-weight: normal;
+    font-size:13px;
+	
+}
+ .overRideLabelBold .slds-has-error .slds-form-element__help {
+    color: var(--lwc-colorTextError,rgb(234, 0, 30));
+    display: none;
+   
+}
+.STIClass .slds-required {
+    color: #c23934;
+    margin: 0 .125rem;
+    font-weight: bold;
+    font-size: 16px;
+}
+.STIClass .slds-button--brand, .slds-button_brand {
+    border-radius: 16px;
+    --slds-c-button-color-border: 0px;
+}
+.AdminUI .slds-button--brand, .slds-button_brand {
+    border-radius: 0px;
+    --slds-c-button-color-border: 0px;
+}
+
+
+.STIClass .addbtnData .slds-button_neutral{
+    background-color:rgb(87, 85, 85);
+    color: white;
+    border-radius:16px;
+    width:fit-content;
+    border: white;
+    /* padding:10px; */
+    display: inline-block;
+    margin-top: 2px;
+
+} 
+.STIClass .addbtnData .slds-button_neutral:disabled{
+    background-color:rgb(156, 146, 146);
+    color: white;
+    border-radius:16px;
+    width:fit-content;
+    border: white;
+    /* padding:10px; */
+    display: inline-block;
+    margin-top: 2px;
+
+}
+
+
+.slds-has-error .slds-input {
+    border-color: var(--lwc-colorBorderError,rgb(234, 0, 30))!important;
+    box-shadow: var(--lwc-colorBorderError,rgb(234, 0, 30)) 0 0 0 var(--lwc-borderWidthThin,1px) inset;
+    background-color: var(--sds-c-input-color-background, var(--lwc-colorBackgroundInput,rgb(255, 255, 255)));
+    color: var(--sds-c-input-text-color);
+    background-clip: padding-box;
+}
+
+.forceVisualMessageQueue .slds-no-flex{
+    visibility: visible;
+}
+.checkboxLanding .slds-checkbox {    
+    display: inline-flex;
+}
+
+.checkboxLanding .slds-has-error .slds-form-element__help {
+    color: var(--lwc-colorTextError,rgb(234, 0, 30));
+    display: none;
+}
+.checkboxLanding .slds-required {
+    color: var(--lwc-colorTextError,rgb(234, 0, 30));
+    margin: 0 var(--lwc-spacingXxxSmall,0.125rem);
+    display: none;
+}
+.LPDetails .slds-required {
+    color: var(--lwc-colorTextError,rgb(234, 0, 30));
+    margin: 0 var(--lwc-spacingXxxSmall,0.125rem);
+    display: none;
+}
+b{
+    color:#000
+} 
+
+
+
+.customminWidth .slds-no-flex{
+    visibility: collapse;
+}
+
+.makeitBold .slds-form-element__label{
+    font-weight: bold;
+}
+
+.updatePhonePadding input {
+    padding-right: 0.2rem;
+    padding-left: 0.2rem;
+    text-align: center;
+}
+.pillUpdate .slds-pill__remove {
+    display: none !important;
+}

@@ -1,0 +1,84 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: http://gizmo.czekaj.com.pl/
+Subject: Error 403
+Date: Sat, 21 Dec 2024 03:27:21 +0100
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--G7vVF0q2EMIZqFw3softaKhu8O1VVcEB79vO4IWdx0----"
+
+
+------MultipartBoundary--G7vVF0q2EMIZqFw3softaKhu8O1VVcEB79vO4IWdx0----
+Content-Type: text/html
+Content-ID: <frame-76879A8704AD57BD46F8EC0C4F063BE9@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://gizmo.czekaj.com.pl/
+
+<!DOCTYPE html><html lang=3D"en"><head><meta http-equiv=3D"Content-Type" co=
+ntent=3D"text/html; charset=3DUTF-8">
+   =20
+    <meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1">
+    <title>Error 403</title>
+	<link href=3D"http://gizmo.czekaj.com.pl/data/templates/web/static/style.c=
+ss" rel=3D"stylesheet">
+  </head>
+<body>
+<div class=3D"error-container">
+	<div class=3D"error-text"><h1>CLIENT ERROR</h1></div>
+	<div class=3D"error-text-strong"><h1>403</h1></div>
+	<div class=3D"error-text"><h1>FORBIDDEN</h1></div>
+</div>
+<div class=3D"error-descr-container">
+    <p>The server understood the request but refuses to authorize it.</p>
+
+</div>=20
+
+
+</body></html>
+------MultipartBoundary--G7vVF0q2EMIZqFw3softaKhu8O1VVcEB79vO4IWdx0----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://gizmo.czekaj.com.pl/data/templates/web/static/style.css
+
+@charset "utf-8";
+
+@font-face { font-family: Rawson; src: url("fonts/rawson-regular.woff2") fo=
+rmat("woff2"), url("fonts/rawson-regular.woff") format("woff"); font-weight=
+: normal; font-style: normal; }
+
+@font-face { font-family: RawsonBold; src: url("fonts/rawson-extrabold.woff=
+2") format("woff2"), url("fonts/rawson-extrabold.woff") format("woff"); fon=
+t-weight: normal; font-style: normal; }
+
+body { text-align: center; background: rgb(247, 249, 251); }
+
+.error-container { display: flex; margin: 100px auto 0px; align-items: cent=
+er; justify-content: center; flex-flow: wrap; }
+
+.error-container .error-text h1 { font-family: RawsonBold, Arial, Helvetica=
+, sans-serif; font-size: 36px; text-align: center; line-height: 1.2em; font=
+-weight: normal; color: rgb(105, 123, 140); margin: 0px; }
+
+.error-container .error-text-strong { margin: 0px 20px; }
+
+.error-container .error-text-strong h1 { font-family: RawsonBold, Arial, He=
+lvetica, sans-serif; font-size: 100px; text-align: center; line-height: 1em=
+; font-weight: normal; border: 4px solid rgb(201, 211, 219); border-radius:=
+ 6px; padding: 0px 20px 15px; color: rgb(255, 42, 42); background: rgb(227,=
+ 236, 243); margin: 20px auto; }
+
+.error-descr-container p { font-family: Rawson, Arial, Helvetica, sans-seri=
+f; font-size: 20px; line-height: 1.2em; font-weight: normal; text-align: ce=
+nter; color: rgb(105, 123, 140); margin: 20px auto; max-width: 900px; }
+
+.error-descr-container p b, .error-descr-container p strong { font-family: =
+RawsonBold, Arial, Helvetica, sans-serif; font-weight: normal; }
+
+@media (max-width: 768px) {
+  .error-container { margin: 2em auto 0px; flex-direction: column; }
+  .error-container .error-text-strong h1 { font-size: 3em; line-height: 1.5=
+em; padding: 0px 0.3em 0.1em; margin: 0.5em auto; }
+}
+------MultipartBoundary--G7vVF0q2EMIZqFw3softaKhu8O1VVcEB79vO4IWdx0------

@@ -1,0 +1,83 @@
+/*fix*/
+.lat25 h1#header-logo a { background-image:url("/dokumenty/szablonyimg/1-logo-25lat-sg.png"); }
+.lat30 h1#header-logo { top:10px; height:175px; }
+.lat30 h1#header-logo a { background-image:url("/dokumenty/szablonyimg/1-logo-30lat.png"); background-size:auto 70%; padding:115px 0 0 20px; font-size:2.8em }
+body.lat30.bg { background-color:#f3f3f3; background-image:url("/dokumenty/szablonyimg/1-bg-30lat.png"); background-repeat:repeat; background-size:auto; }
+
+#header-opcje-dol { width:100%;}
+
+.nabor a:link,.nabor a:visited { position:relative; display:block; text-decoration:none; width:110%; height:100%; padding:10px 0 0 0; box-sizing:border-box; white-space:nowrap;}
+.nabor a:hover strong { color:var(--color-main); }
+.nabor a:focus strong {  text-decoration:underline;}
+.nabor a strong { display:block; font-family:'robotobold',sans-serif; font-size:2.5em; line-height:1.2em; line-height:1em; color:var(--color-main); }
+
+
+iframe.rwd-video  { width:100vw; height:56.25vw; background:var(--color-light-grey}; }
+
+
+@keyframes blink {
+  50% {
+    opacity: 0.0;
+  }
+}
+@-webkit-keyframes blink {
+  50% {
+    opacity: 0.0;
+  }
+}
+/*
+.blink {
+  animation: blink 1s step-start 0s infinite;
+  -webkit-animation: blink 1s step-start 0s infinite;
+}
+*/
+
+.granica-banner a { position:relative; display:block; text-decoration:none; width:203px; height:61px; padding:0 0 0 30px; box-sizing:border-box; white-space:nowrap; 
+  background-image:url("/dokumenty/szablonyimg/1-logo_granica_kadr.gif"); background-position:0 0; background-repeat:no-repeat;}
+
+
+
+/* Responywność */
+
+
+@media only screen and (max-width: 77em) {
+  
+  .lat30 h1#header-logo { top:10px; height:155px; }
+  .lat30 h1#header-logo a { background-size:auto 70%; padding:100px 0 0 20px; }
+  
+ 
+}
+
+
+@media only screen and (max-width: 64em) {
+  
+  .nabor {font-size:0.6em;}
+  .lat30 h1#header-logo { top:10px; height:125px; }
+  .lat30 h1#header-logo a { background-size:auto 60%; padding:75px 0 0 20px; font-size:2em; }
+  
+  .nabor {font-size:0.8em;}
+  
+
+}
+
+@media only screen and (max-width: 50em) {
+
+ 
+}
+
+@media only screen and (max-width: 45em) {
+  
+  .lat30 h1#header-logo { top:5px; height:100px; }
+  .lat30 h1#header-logo a { padding:65px 0 0 10px; font-size:1.8em; }
+
+
+}
+
+@media only screen and (max-width: 30em) {
+  
+  .nabor {font-size:0.4em;}
+
+  .granica-banner {display:none !important;}
+
+}
+

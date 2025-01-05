@@ -1,0 +1,144 @@
+/*!
+ * Pekao widget - app.js
+ * @version: 1.4.9
+ */
+
+(function (o) {
+    var initialize = function () {
+        if (/msie|trident/.test(window.navigator.userAgent)) {
+            console.error("IE browser is not supported for genesys chat widget.");
+            return;
+        }
+        const scriptPath = document.currentScript.src,
+              widgetPath = scriptPath.substr(0, scriptPath.indexOf("js/widget-app.js"));
+        if (!window.jQuery) {  
+            o.aTags.unshift({type: "script", path: "./js/jquery.min.js" })
+        }
+        o.aTags.find(s => s.id  == "genesys-cx-widget-lang").path = "./i18n/widgets-" + o.lang() + o.encodingSuffix + ".i18n.js";
+        o.aTags.find(s => s.id  == "genesys-cx-widget-faq").path = "./faq/faq-" + o.lang() + o.encodingSuffix + ".js";
+        o.aTags.forEach( (oTag) => {
+            var script = document.createElement('script'), head = document.getElementsByTagName('head')[0];
+            if (oTag.type == "script") {
+                    script.async = false;
+                    script.src = widgetPath + oTag.path + "?v=" + o.version;
+                    script.id = oTag.id;
+                    script.onload = function() {
+                        if ((!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete') ) {
+                            script.onload = script.onreadystatechange = null;
+                            head.removeChild(script);
+                            if(oTag.path.includes("cxbus")) {
+                                CXBus.configure({ pluginsPath: widgetPath + "./js/plugins/"});
+                                CXBus.loadPlugin('widgets-core');
+                            }
+                            if(oTag.id == "genesys-cx-widget-config") {
+                                window._genesys.widgets.version = o.version;
+                                window._genesys.widgets.widgetPath = widgetPath;
+                                loadEndpoint();
+                                if(o.gatewayUrl != null && o.gatewayUrl.length >  0) {
+                                    window._genesys.widgets.webchat.apiService.url = o.gatewayUrl;
+                                }
+                            }
+                        }
+                        return true;
+                    };
+                    head.appendChild(script);
+            } else {
+                    var link = document.createElement('link');
+                    link.type = 'text/css';
+                    link.rel = 'stylesheet';
+                    link.id = oTag.id;
+                    link.href = widgetPath + oTag.path + "?v=" + o.version;
+                    document.head.appendChild(link);
+            }
+        });
+    };
+    var loadEndpoint = function () {
+        const cookie = document.cookie.split(';').find(s => s.includes("_genesys.widgets.webchat.endpoint")),
+            endpoint = (cookie !==  undefined) ? cookie.split("=")[1] : "";
+        window._genesys.widgets.webchat.dataURL = endpoint;
+    };
+    ol = window.onload;
+    if (o.onload) {
+            typeof window.onload != "function" ? window.onload = f : window.onload = function () {
+                    ol();
+                    initialize();
+            }
+    } else initialize();
+})({
+    version: "1.4.9",
+    location: document,
+    systemName: document.currentScript.getAttribute('system-name'),
+    encodingSuffix: document.characterSet.toLowerCase() === "iso-8859-2" ? "_iso" : "",
+    gatewayUrl: document.currentScript.getAttribute('gateway-url'),
+    onload: false,
+    aTags: [
+            {
+                type: "script",
+                id: "genesys-cx-widget-config",
+                path: "./js/config/widget-config-" + document.getElementById("genesys-widgets").getAttribute('system-name') + ".js"
+            },
+            {
+                type: "script",
+                id: "genesys-cx-widget-lang"
+            },
+            {
+                type: "script",
+                id: "genesys-cx-widget-faq"
+            },
+            {
+                type: "script",
+                path: "./js/widget-plugin.js"
+            },
+            {
+                type: "script",
+                path: "./js/widget-common.js"
+            },
+            {
+                type: "script",
+                path: "./js/cxbus.min.js"
+            },
+            {
+                type: "script",
+                path: "./js/plugins/interactive-form.min.js"
+            },
+            {
+                type: "script",
+                path: "./js/webrtc/ac_webrtc.min.js"
+            },
+            {
+                type: "script",
+                path: "./js/webrtc/utils.min.js"
+            },
+            {
+                type: "script",
+                path: "./js/webrtc/phone.config.js"
+            },
+            {
+                type: "script",
+                path: "./js/webrtc/phone.api.js"
+            },
+            {
+                type: "script",
+                path: "./js/plugins/webchatworker.min.js"
+            },
+            {
+                type: "link",
+                id: "genesys-widgets-custom-styles",
+                path: "./css/widgets_custom.css"
+            }
+    ],
+    lang: () => { 
+        let l = (typeof sLang !== 'undefined') ? sLang :  document.getElementsByTagName("html")[0].lang.split('-')[0];
+        if(l === "") lang = "en";
+        else switch(l.toLocaleLowerCase()) {
+            case "en": case "eng": case "en_uk":
+                return "en";
+            case "uk": case "ukr": case "uk_ua":
+                return "uk";
+            case "pl":  case "pol": case "pl_pl":
+                return "pl";
+            default:
+                return "en";
+        }
+    }
+});
